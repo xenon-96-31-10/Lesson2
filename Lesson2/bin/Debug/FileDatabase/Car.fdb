@@ -1,0 +1,18 @@
+[
+  {
+    "getName": "БМВ",
+    "getDescription": "Машина бизнес-класса"
+  },
+  {
+    "getName": "Мерседес",
+    "getDescription": "Машина люкс-класса"
+  },
+  {
+    "getName": "Жигули",
+    "getDescription": "Машина обычного класса"
+  },
+  {
+    "getName": "Мазератти",
+    "getDescription": "Машина спорт-класса"
+  }
+]

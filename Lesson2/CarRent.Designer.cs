@@ -60,6 +60,7 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 2;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // FromLabel
             // 
@@ -99,6 +100,7 @@
             this.MakeAnOrderButton.TabIndex = 6;
             this.MakeAnOrderButton.Text = "Make An Order";
             this.MakeAnOrderButton.UseVisualStyleBackColor = true;
+            this.MakeAnOrderButton.Click += new System.EventHandler(this.MakeAnOrderButton_Click);
             // 
             // CarRent
             // 
