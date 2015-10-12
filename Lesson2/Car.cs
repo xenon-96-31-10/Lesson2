@@ -16,11 +16,11 @@ namespace Lesson2
             _name = name;
             _description = description;
         }
-        public string getName
+        public string name
         {
             get { return _name; }       
         }
-        public string getDescription
+        public string description
         {
             get { return _description; }        
         }

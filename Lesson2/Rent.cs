@@ -21,12 +21,12 @@ namespace Lesson2
 
          public string getName
         {
-            get { return _RentCar.getName; }
+            get { return _RentCar.name; }
         }
 
          public string getDescription
          {
-             get { return _RentCar.getDescription; }
+             get { return _RentCar.description; }
          }
 
          public DateTime getFrom

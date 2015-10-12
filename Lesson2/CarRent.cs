@@ -41,7 +41,7 @@ namespace Lesson2
         private void CarList_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             var selectedCar = CarList.SelectedItem as Car;
-            CarDescription.Text = selectedCar.getDescription;
+            CarDescription.Text = selectedCar.description;
         }
 
         private void CarDescription_TextChanged(object sender, System.EventArgs e)
