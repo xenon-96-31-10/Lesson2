@@ -8,26 +8,33 @@ namespace Lesson2
 {
     class CarService
     {
-        
-        public Car[] AVailableCars(DateTime from, DateTime to, Rent[] rentcars)
+        private List<Car> _CScars;
+        private List<Rent> _CSrentcars;
+        public CarService(List<Car> CScars, List<Rent> CSrentcars)
         {
-            Car[] availablecars = new Car[] {};
-            for (int i = 0; i < rentcars.Length; i++)
+            _CScars = CScars;
+            _CSrentcars = CSrentcars;
+        
+        }
+        public List<Car> AVailableCars(DateTime from, DateTime to)
+        {
+            List<Car> availablecars = new List<Car>();
+            for (int i = 0; i < _CSrentcars.Count; i++)
             {
-                if ((from > rentcars[i].getTo) || ((from < rentcars[i].getFrom)&&(to < rentcars[i].getFrom)))
-                { 
-                    if(Array.IndexOf(availablecars,rentcars[i].getName) == -1)
+                if ((from > _CSrentcars[i].getTo) || ((from < _CSrentcars[i].getFrom) && (to < _CSrentcars[i].getFrom)))
+                {
+                    if (availablecars.Contains(_CSrentcars[i].getName))
                     {
-                        availablecars = new Car[] { new Car(rentcars[i].getName, rentcars[i].getDescription) };
+                        availablecars.Add(_CSrentcars[i].getName);
                     }
                 }            
             }
                 return availablecars;
         }
-        public void MakeRent(Car selectedcar, DateTime from, DateTime to, Rent[] rentcars )
+        public void MakeRent(Car selectedcar, DateTime from, DateTime to)
         {
             //getBD
-            rentcars = new Rent[] {new Rent(selectedcar, from, to)};
+            
             //saveBD
             
         }

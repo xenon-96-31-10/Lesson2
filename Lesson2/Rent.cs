@@ -19,9 +19,9 @@ namespace Lesson2
             _to = to;
         }
 
-         public string getName
+         public Car getName
         {
-            get { return _RentCar.name; }
+            get { return _RentCar; }
         }
 
          public string getDescription
